@@ -38,7 +38,7 @@ bool safety_algorithm(int customer_num) {
     while (num_finished < num_customers) {
         //finds process that is not finished and can be satisfied
         bool found = false;
-        for(int p = customer_num; p < num_customers; p++) {
+        for(int p = 0; p < num_customers; p++) {
             //checks if the process is finished or not
             if(finished[p] == 0) {
 
@@ -66,6 +66,10 @@ bool safety_algorithm(int customer_num) {
             cout << "System is not in a safe state" << endl;
             return false;
         }
+    }
+    cout << "Order of processes for safe state: ";
+    for(int i = 0; i < num_customers; i++) {
+        cout << "P" << safeOrder[i] << " ";
     }
     return true;
 }
@@ -175,7 +179,6 @@ int main(int argc, char *argv[]) {
         cout << "Invalid. Enter one of the three commands";
     }
     }
-
 }
 
 
