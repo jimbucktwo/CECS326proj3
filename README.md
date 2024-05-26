@@ -1,4 +1,7 @@
 # How to Compile
+
+Operating Systems Course: This lab was designed to test our ability to implement the safety algorithm in regards to the resource allocation problem.
+
 On Mac and Linux operating systems, enter the command "c++ program.cpp -o program"
 (-o program is optional but I like to do it for simplicity). Then to run the program,
 enter the command "./program [four integer values for available resources]". For example,
